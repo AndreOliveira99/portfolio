@@ -48,11 +48,17 @@ html {
 
 /* about section styles */
 
+.section-header {
+    padding-top: 1rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
 .about-section {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(0, 139, 139);
+    background-color: rgb(0, 187, 187);
     align-items: center;
 }
 
@@ -66,6 +72,11 @@ html {
 
 .about-img-wrapper {
     width: 40%;
+}
+
+.about-img {
+    width: 100%;
+    padding: 5%;
 }
 
 .about-text-wrapper {
@@ -90,15 +101,53 @@ html {
     height: 90%;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 6rem;
 }
 
 .curriculum-item {
     width: 25vw;
-    height: 75vh;
-    background-color: blue;
+    height: 65vh;
+}
+
+.curriculum-item-text {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.curriculum-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+    padding: 0.75rem;
+    filter: brightness(90%);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.curriculum-img:hover {
+    padding: 0;
+    filter: brightness(115%);
+    filter: contrast(105%);
+}
+
+.curriculum-timeline-link {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: 0.8s;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.curriculum-timeline-link:hover {
+    font-size: 2.25rem;
+    padding: 1.25rem;
 }
 
 /* projects section styles */
@@ -107,28 +156,71 @@ html {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(0, 139, 139);
+    background-color: rgb(0, 187, 187);
     align-items: center;
 }
 
 .projects-items-wrapper {
+    justify-content: center;
     display: grid;
     height: 90%;
     width: 90%;
-    grid-gap: 2rem;
+    row-gap: 2rem;
+    column-gap: 4rem;
     padding: 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 18.5vw 18.5vw 18.5vw;
+    grid-template-rows: 18.5vw 18.5vw;
 }
 
 .projects-item {
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-header {
-    padding-top: 1rem;
-    font-size: 4rem;
-    text-transform: uppercase;
+.projects-item-text {
+    font-size: 1.5rem;
+    padding: 0.5rem;   
+}
+
+.projects-img {
+    height: 75%;
+    width: 75%;
+    object-fit: cover;
+    padding: 0.75rem;
+    filter: brightness(90%);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.projects-img:hover {
+    padding: 0;
+    filter: brightness(115%);
+    filter: contrast(105%);
+}
+
+.projects-item-technologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    gap: 0.5rem; 
+    height: 15%;
+    width: 100%;
+}
+
+.technology-img-wrapper {
+    height: 100%;
+    width: fit-content;
+    padding: 0.25rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.technology-img {
+    height: 100%;
+    object-fit: cover;
 }
 
 /* courses & books section styles */
@@ -162,7 +254,7 @@ html {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(0, 139, 139);
+    background-color: rgb(0, 187, 187);
     align-items: center;
 }
 
