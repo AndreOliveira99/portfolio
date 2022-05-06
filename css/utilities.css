@@ -1,0 +1,18 @@
+:root {
+    --fs1: 1rem;
+    --fs2: 1.25rem;
+    --fs3: 1.5rem;
+    --fs4: 2rem;
+    --fs5: 3rem;
+    --fs6: 4rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+}

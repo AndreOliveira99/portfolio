@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/globals.css">
+    <link rel="stylesheet" href="./css/utilities.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-items-wrapper">
+    <header class="flex">
+        <div class="header-items-wrapper flex">
             <a href="#about" class="header-item"> About Me </a>
             <a href="#curriculum" class="header-item">Curriculum </a>
             <a href="#projects" class="header-item"> Projects </a>
@@ -20,11 +22,11 @@
         </div>
     </header>
     <content>
-        <div class="about-section section" id="about">
+        <div class="section" id="about">
             <div class="section-header">
                 About me
             </div>
-            <div class="about-content-wrapper">
+            <div class="section-content-wrapper flex">
                 <div class="about-img-wrapper">
                     <img class="about-img" src="./images/img-1.jpg"></img>
                 </div>
@@ -41,8 +43,6 @@
                             Tenhmpacto no mundo e faça a diferença para as pessoas. Encontrei a
                             tecnologia como uma grande ferramenta para eo o objetivo de criar, participar e contribuir
                             com algo
-                            que tenha
-                            um impacto no mundo e faça a diferença para as pessoas.
                         </p>
 
                         <p>
@@ -51,9 +51,6 @@
                             tecnologia como uma grande ferramenta para ee ferramenta para esse objetivo, então
                             estou em uma jornada de aprendizado e mpacto no mundo e faça a diferença para as pessoas.
                             Encontrei
-                            a
-                            tecnologia como uma grande ferramenta para edesenvolvimento nessa área,
-                            visando conseguir abraçar a oportunidade quando ela surgir!
                         </p>
                     </div>
                 </div>
@@ -61,40 +58,42 @@
         </div>
         </div>
         <!--Curriculum Section-->
-        <div class="curriculum-section section" id="curriculum">
+        <div class="section" id="curriculum">
             <div class="section-header">
                 Curriculum & Experiences
             </div>
-            <div class="curriculum-items-wrapper">
-                <div class="curriculum-item">
+            <div class="section-content-wrapper flex">
+                <div class="curriculum-item flex">
                     <div class="curriculum-item-text">
                         Academics
                     </div>
                     <img src="./images/img-2.jpg" alt="img" class="curriculum-img">
                 </div>
-                <div class="curriculum-item">
+                <div class="curriculum-item flex">
                     <div class="curriculum-item-text">
                         Work
                     </div>
                     <img src="./images/img-3.jpg" alt="img" class="curriculum-img">
                 </div>
-                <div class="curriculum-item">
+                <div class="curriculum-item flex">
                     <div class="curriculum-item-text">
                         Development
                     </div>
                     <img src="./images/img-4.jpg" alt="img" class="curriculum-img">
                 </div>
             </div>
-            <div class="curriculum-timeline-link">
-                See in a Timeline
+            <div class="curriculum-timeline-link-wrapper flex">
+                <div class="curriculum-timeline-link">
+                    See in a Timeline
+                </div>
             </div>
         </div>
         <!--Projects Section-->
-        <div class="projects-section section" id="projects">
+        <div class="section" id="projects">
             <div class="section-header">
                 Projects
             </div>
-            <div class="projects-items-wrapper">
+            <div class="section-content-wrapper grid">
                 <div class="projects-item">
                     <div class="projects-item-text">
                         AB Solar Scraping
@@ -201,101 +200,94 @@
         </div>
         <!-- add icon in the center of img with game or bot etc... -->
         <!--Courses & Books Section-->
-        <div class="courses-books-section section" id="courses-books">
+        <div class="section" id="courses-books">
             <div class="section-header">
                 Courses & Books
             </div>
-            <div class="courses-books-items-wrapper">
-                <div class="courses-books-item">
-                    <div class="courses-books-item-header">
-                        Courses
+            <div class="section-content-wrapper flex">
+                <div class="items-row">
+                    <div class="items-row-header">
+                        Books
                     </div>
-                    <div class="courses-items">
-                        <div class="courses-items-row">
-                            <div class="courses-item">
-                                <div class="courses-item-header">
-                                    Udemy Web Moderno
-                                </div>
-                                <img src="./images/udemy-logo.png" alt="course img" class="courses-item-img">
+                    <div class="items-display">
+                        <div class="item-card">
+                            <div class="item-card-header">
+                                Grokking Algorithms
                             </div>
-                            <div class="courses-item">
-                                <div class="courses-item-header">
-                                    Dio Carrefour Web Developer
-                                </div>
-                                <img src="./images/dio-logo.jpg" alt="course img" class="courses-item-img">
+                            <img src="./images/img-11.jpg" alt="book img" class="item-card-img">
+                        </div>
+                        <div class="item-card">
+                            <div class="item-card-header">
+                                Scrum
                             </div>
+                            <img src="./images/img-12.jpg" alt="book img" class="item-card-img">
+                        </div>
+                        <div class="item-card">
+                            <div class="item-card-header">
+                                Elon Musk
+                            </div>
+                            <img src="./images/img-13.jpg" alt="book img" class="item-card-img">
                         </div>
                     </div>
                 </div>
-                <div class="courses-books-item">
-                    <div class="courses-books-item-header">
-                        Books
+                <div class="items-row">
+                    <div class="items-row-header">
+                        Courses
                     </div>
-                    <div class="books-items">
-                        <div class="books-items-row">
-                            <div class="books-item">
-                                <div class="books-item-header">
-                                    Grokking Algorithms
-                                </div>
-                                <img src="./images/img-11.jpg" alt="book img" class="books-item-img">
+                    <div class="items-display">
+                        <div class="item-card">
+                            <div class="item-card-header">
+                                Udemy Web Moderno
                             </div>
-                            <div class="books-item">
-                                <div class="books-item-header">
-                                    Scrum
-                                </div>
-                                <img src="./images/img-12.jpg" alt="book img" class="books-item-img">
-                            </div>
+                            <img src="./images/udemy-logo.png" alt="course img" class="item-card-img">
                         </div>
-                        <div class="books-items-row">
-                            <div class="books-item">
-                                <div class="books-item-header">
-                                    Elon Musk
-                                </div>
-                                <img src="./images/img-13.jpg" alt="book img" class="books-item-img">
+                        <div class="item-card">
+                            <div class="item-card-header">
+                                Dio Carrefour Web Developer
                             </div>
+                            <img src="./images/dio-logo.jpg" alt="course img" class="item-card-img">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--Countact Section-->
-        <div class="contact-section section" id="contact">
+        <div class="section" id="contact">
             <div class="section-header">
                 Contact me
             </div>
-            <div class="contact-form-wrapper">
-                <form class="contact-form">
-                    <div class="contact-form-header">
-                        Send your message!
-                    </div>
-                    <input class="contact-form-input" type="text" placeholder="Your Name *" id="name" required>
-                    <input class="contact-form-input" type="text" placeholder="Your E-mail *" id="email" required>
-                    <input class="contact-form-input" type="text" placeholder="Subject *" id="subject" required>
-                    <input class="contact-form-input" type="text" placeholder="Company" id="company">
-                    <input class="contact-form-input" type="text" placeholder="Your Phone" id="Phone">
-                    <textarea class="contact-form-input" id="message" rows="8"
-                        placeholder="How can i help you? Suggestions are welcome :)"></textarea>
-                    <div class="contact-form-warning">
-                        * Required
-                    </div>
-                    <button type="submit" class="contact-form-button">Send</button>
-                </form>
-            </div>
-            <div class="social-networks-header">
-                My Networks
-            </div>
-            <div class="social-networks-wrapper">
-                <div class="social-network-img-wrapper">
-                    <img src="./images/github-logo.png" alt="network img" class="social-network-img"></img>
-                </div>
-                <div class="social-network-img-wrapper">
-                    <img src="./images/linkedin-logo.png" alt="network img" class="social-network-img"></img>
+            <div class="section-content-wrapper">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="contact-form-header">
+                            Send your message!
+                        </div>
+                        <input class="contact-form-input" type="text" placeholder="Your Name *" id="name" required>
+                        <input class="contact-form-input" type="text" placeholder="Your E-mail *" id="email" required>
+                        <input class="contact-form-input" type="text" placeholder="Subject *" id="subject" required>
+                        <input class="contact-form-input" type="text" placeholder="Company" id="company">
+                        <input class="contact-form-input" type="text" placeholder="Your Phone" id="Phone">
+                        <textarea class="contact-form-input" id="message" rows="8"
+                            placeholder="How can i help you? Suggestions are welcome :)"></textarea>
+                        <div class="contact-form-warning">
+                            * Required
+                        </div>
+                        <button type="submit" class="contact-form-button">Send</button>
+                    </form>
                 </div>
             </div>
         </div>
     </content>
-    <footer>
-        <div class="footer-content-wrapper">
+    <footer class="flex">
+        <div class="social-networks-wrapper">
+            <div class="social-network-img-wrapper">
+                <img src="./images/github-logo.png" alt="network img" class="social-network-img"></img>
+            </div>
+            <div class="social-network-img-wrapper">
+                <img src="./images/linkedin-logo.png" alt="network img" class="social-network-img"></img>
+            </div>
+        </div>
+        <div class="footer-content-wrapper flex">
             <div class="footer-text">
                 Created by André Oliveira. All rights reserved.
             </div>
