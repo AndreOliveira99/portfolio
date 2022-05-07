@@ -33,6 +33,10 @@ header {
     color: white;
 }
 
+.menu {
+    display: none;
+}
+
 /* mudar tamanho da seção de vh adicionando min-height, usar media query 
    para definir o que acontece para dispositivos menores  */
 
@@ -60,6 +64,7 @@ header {
     padding-bottom: 1rem;
     font-size: var(--fs6);
     text-transform: uppercase;
+    text-align: center;
 }
 
 .section-content-wrapper {
@@ -85,7 +90,7 @@ header {
 
 /* curriculum section styles */
 
-#curriculum.section > .section-content-wrapper.flex {
+#curriculum.section>.section-content-wrapper.flex {
     justify-content: space-around;
 }
 
@@ -143,7 +148,7 @@ header {
 
 /* projects section styles */
 
-#projects > .section-content-wrapper.grid {
+#projects>.section-content-wrapper.grid {
     align-content: center;
     justify-content: center;
     grid-template-columns: repeat(3, 200px);
@@ -199,7 +204,7 @@ header {
 
 /* courses & books section styles */
 
-#courses-books.section > .section-content-wrapper.flex {
+#courses-books.section>.section-content-wrapper.flex {
     flex-direction: column;
     align-items: center;
 }
@@ -338,8 +343,144 @@ footer.flex {
 
 /* Tablets and under */
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+    /*section styles*/
+    .section {
+        padding: 40px 0px;
+    }
+
+    .section {
+        height: fit-content;
+        min-height: 0px;
+    }
+
+    .section-header {
+        font-size: var(--fs5);
+    }
+
+    /*header styles*/
+    header.flex {
+        display: none;
+    }
+
+    .menu {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        right: 0px;
+        position: fixed;
+        margin: 20px;
+        background-color: white;
+        cursor: pointer;
+        z-index: 100;
+        border: solid black 2px;
+        display: block;
+    }
+
+    /*about section styles*/
+    #about>.section-content-wrapper.flex {
+        flex-direction: column;
+        min-width: 0px;
+    }
+
+    .about-img-wrapper {
+        width: 80%;
+    }
+
+    .about-text-wrapper {
+        font-size: var(--fs1);
+        width: 80%;
+        min-width: 0px;
+        text-align: center;
+    }
+
+    /*curriculum section*/
+    #curriculum.section>.section-content-wrapper.flex {
+        width: 90vw;
+        flex-wrap: wrap;
+        min-width: 0px;
+        margin-bottom: 100px;
+    }
+
+    .curriculum-item.flex {
+        width: 200px;
+        height: 400px;
+        min-width: none;
+    }
+
+    .curriculum-item-text {
+        padding: 0.5rem;
+    }
+
+    /*projects section styles*/
+    #projects>.section-content-wrapper.grid {
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(3, 280px);
+        gap: 1rem;
+    }
+
+    /*courses & books section styles*/
+    .items-display {
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
 
 /* Mobile */
 
-@media (max-width: 768px) {}
+@media (max-width: 500px) {
+
+    /* section styles*/
+    .section-content-wrapper {
+        min-width: 500px;
+    }
+
+    .section-header {
+        font-size: var(--fs4);
+    }
+
+    /* header styles */
+    .menu {
+        margin: 10px;
+    }
+
+    /* About section styles */
+    .about-img-wrapper {
+        width: 90%;
+    }
+
+    .about-text-wrapper {
+        font-size: var(--fs1);
+        width: 90%;
+    }
+
+    /* projects section styles */
+    #projects>.section-content-wrapper.grid {
+        grid-template-columns: repeat(1, 200px);
+        grid-template-rows: repeat(6, 280px);
+        gap: 1rem;
+    }
+
+    /* courses & books section styles */
+    .items-row-header {
+        font-size: var(--fs4);
+    }
+
+    /* contact section styles */
+    .contact-form-header {
+        font-size: var(--fs3);
+    }
+
+    .contact-form {
+        width: 50%;
+        padding: 0.5rem 1rem 0.75rem 1rem;
+        gap: 0.5rem;
+    }
+
+    /* footer styles */
+    .footer-text {
+        font-size: var(--fs0);
+    }
+}
