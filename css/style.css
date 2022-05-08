@@ -52,7 +52,7 @@ header {
 }
 
 .section:nth-child(odd) {
-    background-color: rgb(0, 187, 187)
+    background-color: rgb(0, 182, 182)
 }
 
 .section:nth-child(even) {
@@ -483,4 +483,49 @@ footer.flex {
     .footer-text {
         font-size: var(--fs0);
     }
+}
+
+/* pop-up styles */
+
+.pop-up-wrapper.flex {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 101;
+    display: none;
+    overflow-y: scroll;
+}
+
+.pop-up-screen.flex {
+    height: fit-content;
+    width: 90%;
+    min-height: 720px;
+    border-radius: 3rem;
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    z-index: 102;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.close-btn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 30px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+.pop-up-header {
+    font-size: var(--fs5);
+    margin: 20px ;
 }
