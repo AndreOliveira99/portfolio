@@ -497,28 +497,33 @@ footer.flex {
     overflow-y: scroll;
 }
 
+.pop-up-wrapper.flex[active] {
+    display: flex;
+}
+
 .pop-up-screen.flex {
     height: fit-content;
-    width: 90%;
-    min-height: 720px;
-    border-radius: 3rem;
+    width: fit-content;
+    border-radius: 2rem;
     background-color: white;
     position: absolute;
-    top: 5%;
     z-index: 102;
     flex-direction: column;
     justify-content: flex-start;
+    justify-self: center;
+    align-self: center;
 }
 
 .close-btn {
     position: absolute;
     right: 0px;
     top: 0px;
-    margin: 30px;
+    margin: 15px;
     height: 25px;
     width: 25px;
     border-radius: 50%;
     background-color: black;
+    color: white;
 }
 
 .close-btn:hover {
@@ -527,5 +532,9 @@ footer.flex {
 
 .pop-up-header {
     font-size: var(--fs5);
-    margin: 20px ;
+    padding: 25px 50px 0px 50px;
+}
+
+.pop-up-content {
+    padding: 25px 50px;
 }
