@@ -277,7 +277,19 @@ header {
     background-color: white;
 }
 
-.contact-form-button {
+.contact-form-input {
+    border-radius: 0.25rem;
+    border: solid rgb(100, 100, 100) 0.15rem;
+    padding: 0.2rem;
+}
+
+.contact-form-warning {
+    font-size: var(--fs1);
+    color: rgb(100, 100, 100);
+    margin-left: 0.5rem;
+}
+
+.dinamic-button {
     font-size: var(--fs3);
     width: fit-content;
     align-self: center;
@@ -289,21 +301,9 @@ header {
     transition: 0.8s;
 }
 
-.contact-form-button:hover {
+.dinamic-button:hover {
     padding: 0.25rem 1.25rem 0.25rem 1.25rem;
-    letter-spacing: 2px;
-}
-
-.contact-form-input {
-    border-radius: 0.25rem;
-    border: solid rgb(100, 100, 100) 0.15rem;
-    padding: 0.2rem;
-}
-
-.contact-form-warning {
-    font-size: var(--fs1);
-    color: rgb(100, 100, 100);
-    margin-left: 0.5rem;
+    letter-spacing: 3px;
 }
 
 /* footer section styles */
@@ -512,6 +512,7 @@ footer.flex {
     justify-content: flex-start;
     justify-self: center;
     align-self: center;
+    max-width: 1200px;
 }
 
 .close-btn {
@@ -537,4 +538,33 @@ footer.flex {
 
 .pop-up-content {
     padding: 25px 50px;
+}
+
+.pop-up-content li {
+    padding: 8px 0px;
+}
+
+.pop-up-content p ~ ul {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.pop-up-content p ~ ul li {
+    padding: 4px 0px;
+}
+
+.pop-up-content li p {
+    font-size: var(--fs0);
+}
+
+.pop-up-content span {
+    font-weight: 500;
+}
+
+.pop-up-content p ~ p {
+    padding: 3px 0px;
+}
+
+.pop-up-screen.flex .dinamic-button {
+    margin-bottom: 10px;
 }
