@@ -17,3 +17,20 @@
 .grid {
     display: grid;
 }
+
+.dinamic-button {
+    font-size: var(--fs3);
+    width: fit-content;
+    align-self: center;
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    border-radius: 1.5rem;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.dinamic-button:hover {
+    padding: 0.25rem 1.25rem 0.25rem 1.25rem;
+    letter-spacing: 3px;
+}

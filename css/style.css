@@ -37,9 +37,6 @@ header {
     display: none;
 }
 
-/* mudar tamanho da seção de vh adicionando min-height, usar media query 
-   para definir o que acontece para dispositivos menores  */
-
 /* Section Styles */
 
 .section {
@@ -86,6 +83,10 @@ header {
     width: 50%;
     min-width: 460px;
     padding: 1rem;
+}
+
+.about-text-wrapper p ~ p {
+    padding: 4px 0px;
 }
 
 /* curriculum section styles */
@@ -289,23 +290,6 @@ header {
     margin-left: 0.5rem;
 }
 
-.dinamic-button {
-    font-size: var(--fs3);
-    width: fit-content;
-    align-self: center;
-    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-    border-radius: 1.5rem;
-    color: white;
-    background-color: black;
-    cursor: pointer;
-    transition: 0.8s;
-}
-
-.dinamic-button:hover {
-    padding: 0.25rem 1.25rem 0.25rem 1.25rem;
-    letter-spacing: 3px;
-}
-
 /* footer section styles */
 
 footer.flex {
@@ -361,26 +345,52 @@ footer.flex {
 
     /*header styles*/
     header.flex {
+        position: fixed;
+        height: 280px;
+        width: 180px;
+        right: 30px;
+        top: 62px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.980);
         display: none;
+        border: 0px;
+    }
+    header.flex[active] {
+        display: flex;
+    }
+    .header-items-wrapper.flex {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .header-item {
+        font-weight: 400;
+        font-size: var(--fs2);
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        transition: 0.8s;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
     }
 
     .menu {
-        width: 40px;
-        height: 40px;
+        width: 38px;
+        height: 38px;
         border-radius: 13px;
         right: 0px;
         position: fixed;
         margin: 20px;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.960);
         cursor: pointer;
         z-index: 100;
-        border: solid rgb(44, 44, 44) 2px;
         display: flex;
         flex-direction: column;
     }
 
     .bar {
-        height: 4px;
+        height: 3px;
         width: 70%;
         background-color: rgb(44, 44, 44);
         border-radius: 25%;
@@ -448,11 +458,6 @@ footer.flex {
 
     .section-header {
         font-size: var(--fs4);
-    }
-
-    /* header styles */
-    .menu {
-        margin: 10px;
     }
 
     /* About section styles */
