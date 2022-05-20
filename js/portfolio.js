@@ -37,7 +37,8 @@ lenguageSelectorBtn.addEventListener('click', e => {
     else {
         if (window.innerWidth > 768) {
             lenguageMenu.setAttribute('active', '')
-            lenguageSelectorBtn = document.getElementById('lenguage-selector-btn')
+            lenguageSelectorBtn = document
+            .getElementById('lenguage-selector-btn')
             lenguageSelectorBtn.removeAttribute('notSelected')
             lenguageSelectorBtn.setAttribute('selected', '')
             setElementPosition(lenguageSelectorBtn, lenguageMenu)
@@ -99,7 +100,9 @@ document.getElementById('form-btn').addEventListener('click', e => {
     }).then(
         message => {
             if (message == 'OK') {
-                document.getElementById('contact-success').setAttribute('active', '')
+                document
+                .getElementById('contact-success')
+                .setAttribute('active', '')
             }
             else {
                 alert(message)

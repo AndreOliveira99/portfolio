@@ -348,7 +348,10 @@ footer.flex {
 
 /* Media querys */
 
-@media (max-width: 880px) {
+@media (max-width: 930px) {
+    .header-items-wrapper {
+        column-gap: 0.5rem;
+    }
     .header-item {
         font-size: var(--fs2);
     }
